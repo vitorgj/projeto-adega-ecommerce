@@ -1,0 +1,133 @@
+//// Declarações Customizadas
+    // Cores
+    $bk: #272822;
+    $r: #c03;
+    $g: #429032;
+    $y: #49c5bf;
+    $bg: #f4f4f4;
+    $b: #8cc53e;
+    
+    
+// Media Query Mixin - Desktop-first
+@mixin paraTelasMenores ($media) {
+    @media (max-width: $media/16+em) { @content; }    
+}
+
+// Atributos Globais
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: $bg;
+}
+
+h1, h2{
+    color: white;
+}
+
+blockquote {
+    font-style: italic;
+    @include paraTelasMenores(420){
+        margin-left: 10px;
+    }
+}
+
+// Header
+.masthead {
+    display: flex;
+    justify-content: space-between;
+    max-width: 2000px;
+    margin: auto;
+    padding: 10px;
+    background: $b;
+    @include paraTelasMenores(700) {
+        display: block;
+        text-align: center;
+    }
+}
+
+.logo {
+    padding: 10px 0 10px 10px;
+    color: white;
+    line-height: 1.5;
+    font-size: 1.4em;
+    @include paraTelasMenores(700) {
+        padding: 10px 0;
+        font-size: 1.5em;
+    }
+    @include paraTelasMenores(420) {
+        font-size: 1.1em;
+    }
+}
+
+// Placeholder
+%highlight-section {
+    /*border: white 1px solid;
+    border-radius: 3px;
+    background: rgba(white, .1);*/
+    background: rgba(black, .2);
+    border-radius: 3px;
+}
+
+// Campo de Busca
+.search {
+    @extend %highlight-section;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: .9em;
+    padding: 10px;
+
+    .field {
+        width: 50%;
+        margin: 0 5px;
+        padding: 7px;
+        @include paraTelasMenores(420) {
+            width: 70%;
+        }
+    }
+
+    button {
+        @include paraTelasMenores(420) {
+            width: 90%;
+            margin-top: 10px;
+        }
+    }
+}
+
+// Formulários
+.field,
+.comments {
+    width: 100%;
+    margin-bottom: 10px;
+
+    @include paraTelasMenores(420) {
+        width: 100%;
+    }
+}
+
+// Elementos de Formulário
+input, textarea {
+    font-family: "Segoe UI", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 10px;
+    border: none;
+    background: rgba(white, .8);
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px rgba(black, .5);
+}
+
+button {
+    border: none;
+    padding: 7px 10px;
+    background: #333;
+    border-radius: 3px;
+    color: white;
+    font-family: "Segoe UI", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    cursor: pointer;
+}
