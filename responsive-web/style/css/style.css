@@ -22,14 +22,14 @@ blockquote {
   max-width: 2000px;
   margin: auto;
   padding: 10px;
-  background: #8cc53e; }
+  background: #1f1f1f; }
   @media (max-width: 43.75em) {
     .masthead {
       display: block;
       text-align: center; } }
 
 .logo {
-  padding: 10px 0 10px 10px;
+  padding: 10px 0 10px 25px;
   color: white;
   line-height: 1.5;
   font-size: 1.4em; }
@@ -42,11 +42,11 @@ blockquote {
       font-size: 1.1em; } }
 
 .search {
-  /*border: white 1px solid;
+  border: white 1px solid;
   border-radius: 3px;
-  background: rgba(white, .1);*/
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 3px; }
+  background: rgba(255, 255, 255, 0.1);
+  /*background: rgba(black, .2);
+  border-radius: 3px;*/ }
 
 .search {
   display: flex;
