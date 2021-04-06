@@ -7,9 +7,6 @@ body {
   font-family: "Segoe UI", Arial, "Helvetica Neue", Helvetica, sans-serif;
   background-color: #ebc312; }
 
-h1, h2 {
-  color: white; }
-
 blockquote {
   font-style: italic; }
   @media (max-width: 26.25em) {
@@ -198,5 +195,23 @@ button {
       float: right;
       padding: 25px 0px 20px;
       background: whitesmoke; }
+
+.main-footer {
+  background: #2a2a2a;
+  color: whitesmoke;
+  padding: 15px;
+  border-top: #c03 2px dotted;
+  font-size: .7em; }
+  .main-footer li {
+    display: flex;
+    width: 0 7px;
+    border-radius: 6px;
+    align-items: center; }
+    .main-footer li p {
+      padding-left: 8px;
+      padding-top: 14px; }
+  .main-footer p {
+    margin-top: 0;
+    font-size: 1.2em; }
 
 /*# sourceMappingURL=style.css.map */
