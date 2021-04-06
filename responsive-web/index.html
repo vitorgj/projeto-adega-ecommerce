@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="./img/icon/icon-java-bar.png" type="image/x-icon">
@@ -11,7 +12,10 @@
 </head>
 <body>
     <header class="masthead" role="banner">
-        <div class="logo"><img src="./img/logo/logo-java-bar.png" alt="logo"></div>
+        <div class="logo"><a href="./index.html"><img src="./img/logo/logo-java-bar.png" alt="logo"></a></div>
+        <button class="btn-cart">
+            <span class="material-icons">shopping_cart</span>
+        </button>
         <div class="search" role="search">
             <form>
                 <label>Busca:
@@ -26,6 +30,7 @@
         <ul class="nav-container">
             <li><a href="#">Todos os Produtos</a></li>
             <li><a href="#">Energéticos</a></li>
+            <li><a href="#">Vodkas</a></li>
             <li><a href="#">Cervejas</a></li>
             <li><a href="#">Whisky's</a></li>
             <li><a href="#">Vinhos</a></li>
@@ -36,6 +41,34 @@
     <main class="main-container" role="main">
         <h1>Bem vindo à sua Adega Virtual!</h1>
         <p>O que deseja pra hoje? Navegue por nossa loja e encontre os melhores preços.</p>
+            <section class="main-content">
+                <div class="popups">
+                    <div class="popnav">
+                        <h2 style="color: rgb(41, 41, 41);">Navegue por Loja</h2>
+                        <ul>
+                            <li><a href="#"><img src="" alt="Drinks"></a> Drinks</li>
+                            <li><a href="#"><img src="" alt="Specials"></a> Especiais</li>
+                            <li><a href="#"><img src="" alt="Exclusives"></a> Exclusivos</li>
+                            <li><a href="#"><img src="" alt="News"></a> Novidades</li>
+                        </ul>
+                    </div>
+
+                    <div class="pophot">
+                        <h2 style="color: rgb(41, 41, 41);">Veja as Bebidas mais vendidas</h2>
+                        <ul>
+                            <li><a href="#"><img src="" alt="Red-Label"></a> Red Label</li>
+                            <li><a href="#"><img src="" alt="White-Horse"></a> White Horse</li>
+                            <li><a href="#"><img src="" alt="BpuroMalte"></a> Bhrama Puro Malte</li>
+                            <li><a href="#"><img src="" alt="Heineken"></a> Heineken</li>
+                        </ul>
+                    </div>
+
+                    <div class="popofer">
+                        <h2 style="color: rgb(41, 41, 41);">Oferta do Dia</h2>
+                        <a href="#"><img src="" alt="offer"></a>
+                    </div>
+                </div>
+            </section>
     </main>
 </body>
 </html>

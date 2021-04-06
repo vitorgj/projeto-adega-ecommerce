@@ -71,10 +71,26 @@ blockquote {
     height: auto;
 }
 
+.btn-cart {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+
+    padding-top: 32px;
+    justify-content: center;
+    font-size: 18px;
+    display: inline-flex;
+    margin-left: 660px;
+
+}
+
 // Placeholder
 %highlight-section {
     border: white 1px solid;
-    border-radius: 4px;
+    border-radius: 3px;
     //background: rgba(white, .1);
     /*background: rgba(black, .2);
     border-radius: 3px;*/
@@ -89,7 +105,7 @@ blockquote {
     text-align: center;
     color: white;
     font-size: .9em;
-    padding: 10px;
+    padding: 1px 35px 1px 35px;
 
     .field {
         width: 50%;
@@ -166,7 +182,7 @@ button {
     li {
         display: flex;
         width: 0 5px;
-        margin: 0px 55px 0px 0px;
+        margin: 0px 45px 0px 0px;
         text-align: center;
         @include paraTelasMenores(420) {
             display: flex;
@@ -190,3 +206,68 @@ button {
         border-bottom: rgba(white, .6) 1px solid;
     }
 }
+
+// Conteúdo principal
+.main-container {
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px 40px 20px;
+    background: #2a2a2a;
+    color: rgba(white, .8);
+    border-bottom: $r 30px solid;
+    @include paraTelasMenores(420) {
+        padding: 20px;
+        line-height: 1.5;
+    }
+
+    //Main Heading
+
+    &>h1, h2 {
+        margin-top: 0;
+        padding-bottom: 10px;
+        border-bottom: $r 3px solid;
+        @include paraTelasMenores(420) {
+            font-size: 1.6em;
+        }
+    }
+    &h2 {
+        color: #000;
+    }
+
+    .popups {
+        box-sizing: border-box;
+        margin: auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .popnav {
+            width: 50%;
+            border-radius: 2px;
+            float: left;
+            padding: 25px 0px 20px;
+            background: whitesmoke;
+        }
+
+        .pophot {
+            width: 50%;
+            border-radius: 2px;
+            padding: 25px 0px 20px;
+            background: whitesmoke;
+        }
+
+        .popofer {
+            width: 50%;
+            border-radius: 2px;
+            float: right;
+            padding: 25px 0px 20px;
+            background: whitesmoke;
+        }
+
+        
+    }
+    
+}
+
+
+    
