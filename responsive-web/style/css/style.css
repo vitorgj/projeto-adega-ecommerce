@@ -53,10 +53,10 @@ blockquote {
   overflow: hidden;
   outline: none;
   padding-top: 32px;
-  justify-content: center;
-  font-size: 18px;
-  display: inline-flex;
-  margin-left: 660px; }
+  justify-content: space-between;
+  font-size: 72px;
+  display: flex;
+  margin-left: 710px; }
 
 .search, .nav-container a {
   border: white 1px solid;
@@ -71,10 +71,10 @@ blockquote {
   text-align: center;
   color: white;
   font-size: .9em;
-  padding: 1px 35px 1px 35px; }
+  padding: 1px 20px 1px 20px; }
   .search .field {
-    width: 50%;
-    margin: 0 5px;
+    width: 55%;
+    margin: 0 7px;
     padding: 7px; }
     @media (max-width: 26.25em) {
       .search .field {
@@ -163,38 +163,38 @@ button {
     .main-container {
       padding: 20px;
       line-height: 1.5; } }
-  .main-container > h1, .main-container h2 {
+  .main-container > h1 {
     margin-top: 0;
     padding-bottom: 10px;
     border-bottom: #c03 3px solid; }
     @media (max-width: 26.25em) {
-      .main-container > h1, .main-container h2 {
+      .main-container > h1 {
         font-size: 1.6em; } }
-  .main-containerh2 {
-    color: #000; }
-  .main-container .popups {
-    box-sizing: border-box;
-    margin: auto;
+
+.main-content {
+  display: flex; }
+  .main-content h1 {
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; }
-    .main-container .popups .popnav {
-      width: 50%;
-      border-radius: 2px;
-      float: left;
-      padding: 25px 0px 20px;
-      background: whitesmoke; }
-    .main-container .popups .pophot {
-      width: 50%;
-      border-radius: 2px;
-      padding: 25px 0px 20px;
-      background: whitesmoke; }
-    .main-container .popups .popofer {
-      width: 50%;
-      border-radius: 2px;
-      float: right;
-      padding: 25px 0px 20px;
-      background: whitesmoke; }
+    margin-top: 30px; }
+  .main-content img {
+    max-width: 160px;
+    display: block; }
+  .main-content .container-flex-popup {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto; }
+  .main-content .container-flex-pophot {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto; }
+  .main-content div {
+    margin: 0 13px; }
+  .main-content container-flex-popup > div {
+    flex: 1 1 200px; }
+  .main-content container-flex-pophot > div {
+    flex: 1 1 200px; }
 
 .main-footer {
   background: #2a2a2a;
