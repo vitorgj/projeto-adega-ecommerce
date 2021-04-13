@@ -61,7 +61,7 @@ blockquote {
   display: flex;
   padding: 1px 36px 1px 36px; }
 
-.search, .nav-container a {
+.nav-container a {
   border: white 1px solid;
   border-radius: 6px;
   /*background: rgba(black, .2);
@@ -74,15 +74,16 @@ blockquote {
   justify-content: center;
   text-align: center;
   color: white;
-  font-size: .9em;
-  padding: 1px 10px 1px 10px; }
-  .search .field {
-    width: 55%;
-    margin: 0 5px;
-    padding: 7px; }
-    @media (max-width: 26.25em) {
-      .search .field {
-        width: 70%; } }
+  font-size: 30px; }
+  .search #txt-search {
+    width: 220px;
+    padding: 10px; }
+  .search ::placeholder {
+    font-style: italic; }
+  .search #btn-search {
+    padding-left: 4px;
+    height: 28px;
+    cursor: pointer; }
   @media (max-width: 26.25em) {
     .search button {
       width: 90%;

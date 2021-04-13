@@ -99,23 +99,28 @@ blockquote {
 
 // Campo de Busca
 .search {
-    @extend %highlight-section;
     display: inline-flex;
     margin-left: 60%;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    font-size: .9em;
-    padding: 1px 10px 1px 10px;
+    font-size: 30px;
+    
+    
+    #txt-search {
+        width: 220px;
+        padding: 10px;
+    }
 
-    .field {
-        width: 55%;
-        margin: 0 5px;
-        padding: 7px;
-        @include paraTelasMenores(420) {
-            width: 70%;
-        }
+    ::placeholder{
+        font-style: italic;
+    }
+
+    #btn-search {
+        padding-left: 4px;
+        height: 28px;
+        cursor: pointer;
     }
 
     button {
