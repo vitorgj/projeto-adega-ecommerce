@@ -253,8 +253,10 @@ button {
     }
 
     img {
-        max-width: 100px;
+        max-width: 120px;
         display: flex;
+        border-bottom-left-radius: 12px;
+        border-top-right-radius: 12px;
     }
 
     .container-flex-popup {
