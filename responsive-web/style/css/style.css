@@ -187,7 +187,7 @@ button {
     border-right: #c03 2px solid;
     padding-top: 5px; }
   .main-content img {
-    max-width: 120px;
+    max-width: 90px;
     display: flex;
     border-bottom-left-radius: 12px;
     border-top-right-radius: 12px; }
@@ -208,11 +208,21 @@ button {
     flex-wrap: wrap;
     max-width: 1500px;
     margin: 0 auto; }
+  .main-content .container-flex-popoffer {
+    background: #c03;
+    border-radius: 3px;
+    padding: 15px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto; }
   .main-content div {
     margin: 10px; }
   .main-content container-flex-popup > div {
     flex: 1 1 150px; }
   .main-content container-flex-pophot > div {
+    flex: 1 1 150px; }
+  .main-content container-flex-popoffer > div {
     flex: 1 1 150px; }
 
 .main-footer {

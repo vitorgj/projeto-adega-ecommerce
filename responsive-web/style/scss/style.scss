@@ -253,7 +253,7 @@ button {
     }
 
     img {
-        max-width: 120px;
+        max-width: 90px;
         display: flex;
         border-bottom-left-radius: 12px;
         border-top-right-radius: 12px;
@@ -280,6 +280,16 @@ button {
         margin: 0 auto;
     }
 
+    .container-flex-popoffer {
+        background: $r;
+        border-radius: 3px;
+        padding: 15px 70px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
     div{
         margin: 10px;
     }
@@ -289,6 +299,10 @@ button {
     }
 
     container-flex-pophot > div {
+        flex: 1 1 150px;
+    }
+
+    container-flex-popoffer > div {
         flex: 1 1 150px;
     }
 }
