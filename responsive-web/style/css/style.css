@@ -61,7 +61,7 @@ blockquote {
   display: flex;
   padding: 1px 36px 1px 36px; }
 
-.nav-container a {
+.nav-container span#name-menu, .nav-container a {
   border: white 1px solid;
   border-radius: 6px;
   /*background: rgba(black, .2);
@@ -125,6 +125,13 @@ button {
     .main-nav {
       padding: 5px 0; } }
 
+img#logo:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
 .nav-container {
   display: flex;
   justify-content: center;
@@ -145,6 +152,17 @@ button {
         justify-content: center;
         flex-basis: 45%;
         margin: 5px; } }
+  .nav-container span#name-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-bottom: rgba(255, 255, 255, 0.6) 1px solid; }
   .nav-container a {
     display: flex;
     justify-content: center;
