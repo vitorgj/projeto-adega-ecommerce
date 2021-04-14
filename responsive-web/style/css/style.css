@@ -277,4 +277,11 @@ img#logo:hover {
     margin-top: 0;
     font-size: 1.2em; }
 
+li#footer-icon:hover {
+  background-color: whitesmoke; }
+  li#footer-icon:hover p {
+    color: #c03; }
+  li#footer-icon:hover span.material-icons {
+    color: #c03; }
+
 /*# sourceMappingURL=style.css.map */

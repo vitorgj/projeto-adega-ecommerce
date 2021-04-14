@@ -375,5 +375,15 @@ img#logo:hover {
     }
 }
 
+li#footer-icon:hover{
+    background-color: whitesmoke;
+    p {
+        color: $r;
+    }
+    span.material-icons {
+        color: $r;
+    }
+}
+
 
     
