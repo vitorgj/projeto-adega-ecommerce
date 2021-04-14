@@ -76,7 +76,7 @@ blockquote {
   color: white;
   font-size: 30px; }
   .search #txt-search {
-    width: 220px;
+    width: 230px;
     padding: 10px; }
   .search ::placeholder {
     font-style: italic; }
@@ -187,7 +187,7 @@ button {
     border-right: #c03 2px solid;
     padding-top: 5px; }
   .main-content img {
-    max-width: 90px;
+    max-width: 100px;
     display: flex;
     border-bottom-left-radius: 12px;
     border-top-right-radius: 12px; }
@@ -203,7 +203,7 @@ button {
   .main-content .container-flex-pophot {
     background: #c03;
     border-radius: 3px;
-    padding: 15px 70px;
+    padding: 15px 80px;
     display: flex;
     flex-wrap: wrap;
     max-width: 1500px;
@@ -211,7 +211,7 @@ button {
   .main-content .container-flex-popoffer {
     background: #c03;
     border-radius: 3px;
-    padding: 15px 70px;
+    padding: 15px 80px;
     display: flex;
     flex-wrap: wrap;
     max-width: 1500px;
