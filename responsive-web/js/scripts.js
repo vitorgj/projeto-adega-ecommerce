@@ -25,6 +25,7 @@ $(document).ready(function() {
         });
     });
 
+    // Conteúdos da barra de navegação
     $("ul.nav-container").addClass("unselectable")
 
     $("li.btn-menu-nrg").click(function(){
