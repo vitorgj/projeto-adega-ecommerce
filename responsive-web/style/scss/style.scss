@@ -109,6 +109,7 @@ blockquote {
     
     
     #txt-search {
+        outline: none;
         width: 230px;
         padding: 10px;
     }
@@ -295,10 +296,19 @@ img#logo:hover {
     }
 
     img {
+        cursor: pointer;
         max-width: 100px;
         display: flex;
         border-bottom-left-radius: 12px;
         border-top-right-radius: 12px;
+    }
+
+    img:hover{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
     }
 
     .container-flex-popup {
@@ -309,7 +319,7 @@ img#logo:hover {
         display: flex;
         flex-wrap: wrap;
         max-width: 1000px;
-        margin: 0 auto;
+        margin: 2fr 2fr 2fr 2fr;
     }
 
     .container-flex-pophot {
@@ -319,7 +329,7 @@ img#logo:hover {
         display: flex;
         flex-wrap: wrap;
         max-width: 1500px;
-        margin: 0 auto;
+        margin: 2fr 2fr 2fr 2fr;
     }
 
     .container-flex-popoffer {
@@ -329,7 +339,7 @@ img#logo:hover {
         display: flex;
         flex-wrap: wrap;
         max-width: 1500px;
-        margin: 0 auto;
+        margin: 2fr 2fr 2fr 2fr;
     }
 
     div{
