@@ -387,6 +387,17 @@ img#logo:hover {
     }
 }
 
+.products {
+    background: white;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 9999;
+    width: 800px;
+    height: 600px;
+    justify-content: center;
+    padding: 200px 570px;
+}
+
 // Rodapé
 .main-footer {
     
