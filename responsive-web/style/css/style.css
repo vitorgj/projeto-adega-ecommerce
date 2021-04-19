@@ -194,6 +194,13 @@ img#logo:hover {
   -ms-user-select: none;
   user-select: none; }
 
+.viewer-product {
+  -webkit-filter: blur(12px);
+  -moz-filter: blur(12px);
+  -o-filter: blur(12px);
+  -ms-filter: blur(12px);
+  filter: blur(12px); }
+
 .content-menu {
   padding: 10px;
   width: 100%;
@@ -291,15 +298,47 @@ img#logo:hover {
   .main-content container-flex-popoffer > div {
     flex: 1 1 150px; }
 
-.products {
+#product-one {
   background: white;
+  color: black;
   border-radius: 4px;
-  position: absolute;
+  position: relative;
+  margin: auto;
   z-index: 9999;
   width: 800px;
   height: 600px;
-  justify-content: center;
   padding: 200px 570px; }
+  #product-one span {
+    top: 12px;
+    right: 15px;
+    opacity: 0.5;
+    display: inline-flex;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 0; }
+    #product-one span img {
+      max-width: 40px; }
+
+#product-two {
+  background: white;
+  color: black;
+  border-radius: 4px;
+  position: relative;
+  margin: auto;
+  z-index: 9999;
+  width: 800px;
+  height: 600px;
+  padding: 200px 570px; }
+  #product-two span {
+    top: 12px;
+    right: 15px;
+    opacity: 0.5;
+    display: inline-flex;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 0; }
+    #product-two span img {
+      max-width: 40px; }
 
 .main-footer {
   background: #2a2a2a;

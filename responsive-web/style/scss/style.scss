@@ -72,6 +72,7 @@ blockquote {
     font-size: 36px;
 }
 
+
 .btn-cart {
     background-color: transparent;
     background-repeat: no-repeat;
@@ -259,6 +260,15 @@ img#logo:hover {
     user-select: none;
 }
 
+.viewer-product {
+    -webkit-filter: blur(12px);
+    -moz-filter: blur(12px);
+    -o-filter: blur(12px);
+    -ms-filter: blur(12px);
+    filter: blur(12px);
+}
+
+
 .content-menu {
     padding: 10px;
     width: 100%;
@@ -387,15 +397,57 @@ img#logo:hover {
     }
 }
 
-.products {
+// Produtos
+#product-one {
     background: white;
+    color: black;
     border-radius: 4px;
-    position: absolute;
+    position: relative;
+    margin: auto;
     z-index: 9999;
     width: 800px;
     height: 600px;
-    justify-content: center;
     padding: 200px 570px;
+
+    span {
+        top: 12px;
+        right: 15px;
+        opacity: 0.5;
+        display: inline-flex;
+        cursor: pointer;
+        position: absolute;
+        margin-top: 0;
+
+        img {
+            max-width: 40px;
+        }
+    }    
+}
+
+#product-two {
+    background: white;
+    color: black;
+    border-radius: 4px;
+    position: relative;
+    margin: auto;
+    z-index: 9999;
+    width: 800px;
+    height: 600px;
+    padding: 200px 570px;
+
+    span {
+        top: 12px;
+        right: 15px;
+        opacity: 0.5;
+        display: inline-flex;
+        cursor: pointer;
+        position: absolute;
+        margin-top: 0;
+
+        img {
+            max-width: 40px;
+        }
+    }
 }
 
 // Rodapé

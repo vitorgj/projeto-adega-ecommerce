@@ -33,7 +33,7 @@ $(document).ready(function() {
         $("div.content-nrg").slideToggle("slow");
         $("li.btn-menu-nrg").mouseleave(function(){
             $("div.content-nrg").slideUp("fast")
-        })
+        });
     });
 
     $("li.btn-menu-vod").click(function(){
@@ -41,7 +41,7 @@ $(document).ready(function() {
         $("div.content-vod").slideToggle("slow");
         $("li.btn-menu-vod").mouseleave(function(){
             $("div.content-vod").slideUp("fast")
-        })
+        });
     });
 
     $("li.btn-menu-cer").click(function(){
@@ -49,7 +49,7 @@ $(document).ready(function() {
         $("div.content-cer").slideToggle("slow");
         $("li.btn-menu-cer").mouseleave(function(){
             $("div.content-cer").slideUp("fast")
-        })
+        });
     });
 
     $("li.btn-menu-whi").click(function(){
@@ -57,7 +57,7 @@ $(document).ready(function() {
         $("div.content-whi").slideToggle("slow");
         $("li.btn-menu-whi").mouseleave(function(){
             $("div.content-whi").slideUp("fast")
-        })
+        });
     });
 
     $("li.btn-menu-vin").click(function(){
@@ -65,7 +65,7 @@ $(document).ready(function() {
         $("div.content-vin").slideToggle("slow");
         $("li.btn-menu-vin").mouseleave(function(){
             $("div.content-vin").slideUp("fast")
-        })
+        });
     });
 
     $("li.btn-menu-oth").click(function(){
@@ -73,7 +73,41 @@ $(document).ready(function() {
         $("div.content-oth").slideToggle("slow");
         $("li.btn-menu-oth").mouseleave(function(){
             $("div.content-oth").slideUp("fast")
-        })
+        });
+    }); 
+
+    
+
+    $("div.products").addClass("viewer-products")
+
+    // Animação do Botão Fechar 
+    $("#close").mouseenter(function(){
+        $("span#close").animate({
+            opacity: 1.0
+        });
+    });
+    $("#close").mouseleave(function(){
+        $("span#close").animate({
+            opacity: 0.5
+        });
+    });
+
+    $("img#exclu").click(function(){
+        $("div#product-one").removeAttr("style")
+        $("main-container").prepend("div#product-one")
+        $("product-one").fadeIn("slow")
+    });
+    $("span#close").click(function(){
+        $("div#product-one").fadeOut("fast")
     });
     
+    $("img#novi").click(function(){
+        $("div#product-two").removeAttr("style")
+        $("main-container").prepend("div#product-two")
+        $("product-two").fadeIn("slow")
+    })
+    $("span#close").click(function(){
+        $("div#product-two").fadeOut("fast")
+    });
+
 });
