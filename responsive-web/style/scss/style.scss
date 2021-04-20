@@ -291,7 +291,15 @@ img#logo:hover {
     padding: 10px;
     background: rgb(95, 15, 35);
     p {
+        cursor: pointer;
         color: white;
+        letter-spacing: 2px;
+        font-size: 12px;
+        bottom: 2px;
+        margin: 1.6em 0;
+    }
+    p:hover {
+        opacity: 0.6;
     }
 }
 
@@ -425,6 +433,32 @@ img#logo:hover {
 }
 
 #product-two {
+    background: white;
+    color: black;
+    border-radius: 4px;
+    position: relative;
+    margin: auto;
+    z-index: 9999;
+    width: 800px;
+    height: 600px;
+    padding: 200px 570px;
+
+    span {
+        top: 12px;
+        right: 15px;
+        opacity: 0.5;
+        display: inline-flex;
+        cursor: pointer;
+        position: absolute;
+        margin-top: 0;
+
+        img {
+            max-width: 40px;
+        }
+    }
+}
+
+#product-thr {
     background: white;
     color: black;
     border-radius: 4px;

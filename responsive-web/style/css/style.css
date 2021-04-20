@@ -221,7 +221,14 @@ img#logo:hover {
   padding: 10px;
   background: #5f0f23; }
   .style-nav p {
-    color: white; }
+    cursor: pointer;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 12px;
+    bottom: 2px;
+    margin: 1.6em 0; }
+  .style-nav p:hover {
+    opacity: 0.6; }
 
 .main-container {
   max-width: 1500px;
@@ -338,6 +345,27 @@ img#logo:hover {
     position: absolute;
     margin-top: 0; }
     #product-two span img {
+      max-width: 40px; }
+
+#product-thr {
+  background: white;
+  color: black;
+  border-radius: 4px;
+  position: relative;
+  margin: auto;
+  z-index: 9999;
+  width: 800px;
+  height: 600px;
+  padding: 200px 570px; }
+  #product-thr span {
+    top: 12px;
+    right: 15px;
+    opacity: 0.5;
+    display: inline-flex;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 0; }
+    #product-thr span img {
       max-width: 40px; }
 
 .main-footer {

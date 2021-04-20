@@ -81,12 +81,12 @@ $(document).ready(function() {
     $("div.products").addClass("viewer-products")
 
     // Animação do Botão Fechar 
-    $("#close").mouseenter(function(){
+    $("span#close").mouseenter(function(){
         $("span#close").animate({
             opacity: 1.0
         });
     });
-    $("#close").mouseleave(function(){
+    $("span#close").mouseleave(function(){
         $("span#close").animate({
             opacity: 0.5
         });
@@ -105,9 +105,18 @@ $(document).ready(function() {
         $("div#product-two").removeAttr("style")
         $("main-container").prepend("div#product-two")
         $("product-two").fadeIn("slow")
-    })
+    });
     $("span#close").click(function(){
         $("div#product-two").fadeOut("fast")
+    });
+
+    $("img#drin").click(function(){
+        $("div#product-thr").removeAttr("style")
+        $("main-container").prepend("div#product-thr")
+        $("product-thr").fadeIn("slow")
+    });
+    $("span#close").click(function(){
+        $("div#product-thr").fadeOut("fast")
     });
 
 });
