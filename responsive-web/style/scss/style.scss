@@ -370,6 +370,7 @@ img#logo:hover {
 
     .container-flex-pophot {
         background: $r;
+        box-shadow: inset 0 2px 2px rgba(black, .2);
         border-radius: 3px;
         padding: 15px 80px;
         display: flex;
@@ -380,12 +381,31 @@ img#logo:hover {
 
     .container-flex-popoffer {
         background: $r;
+        box-shadow: inset 0 2px 2px rgba(black, .2);
         border-radius: 3px;
         padding: 15px 80px;
         display: flex;
         flex-wrap: wrap;
         max-width: 1500px;
         margin: 2fr 2fr 2fr 2fr;
+
+        img#offer {
+            max-width: 300px;
+            height: 300px;
+        }
+
+        p#offer-content {
+            letter-spacing: 2,5px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        p#offer-price {
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 23px;
+            color: orange;
+        }
     }
 
     div{
@@ -481,6 +501,32 @@ img#logo:hover {
         img {
             max-width: 40px;
         }
+    }
+}
+
+#product-offer {
+    background: white;
+    color: black;
+    border-radius: 4px;
+    position: relative;
+    margin: auto;
+    z-index: 9999;
+    width: 800px;
+    height: 600px;
+    padding: 200px 570px;
+
+    span {
+        top: 12px;
+        right: 15px;
+        opacity: 0.5;
+        display: inline-flex;
+        cursor: pointer;
+        position: absolute;
+        margin-top: 0;
+    }
+    
+    img {
+        max-width: 40px;
     }
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +13,11 @@
     <link rel="shortcut icon" href="./img/icon/icon-java-bar.png" type="image/png">
     <title>Java Bar | Sua adega virtual</title>
 </head>
+
 <body>
     <header class="masthead" role="banner">
         <div class="logo"><a href="./index.html"><img id="logo" src="./img/logo/logo-java-bar.png" alt="logo"></a></div>
-        
+
         <div class="search" role="search">
             <input type="text" id="txt-search" placeholder="Buscar...">
             <img src="./img/img-content/baseline_search.png" id="btn-search" alt="busca">
@@ -64,7 +66,9 @@
             <li class="btn-menu-whi">
                 <span id="name-menu">Whisky's</span>
                 <div class="content-whi" style="display: none;">
-                    <p>Whisky's</p>
+                    <p>WHITE HORSE</p>
+                    <p>JOHNNIE WALKER</p>
+                    <p>JACK DANIEL'S</p>
                 </div>
             </li>
 
@@ -72,6 +76,7 @@
                 <span id="name-menu">Vinhos</span>
                 <div class="content-vin" style="display: none;">
                     <p>SANTOMÉ</p>
+                    <p>GATO NEGRO</p>
                 </div>
             </li>
 
@@ -92,72 +97,88 @@
         <div class="products">
             <div id="product-one" style="display: none;">
                 <span id="close"><img src="./img/img-content/baseline_close.png" alt="close"></span>
-                <p>Produto</p>
+                <p>Produto 1</p>
             </div>
 
             <div id="product-two" style="display: none;">
                 <span id="close"><img src="./img/img-content/baseline_close.png" alt="close"></span>
-                <p>Outro Produto</p>
+                <p>Produto 2</p>
             </div>
 
             <div id="product-thr" style="display: none;">
                 <span id="close"><img src="./img/img-content/baseline_close.png" alt="close"></span>
-                <p>Mais um Produto</p>
+                <p>Produto 3</p>
+            </div>
+
+            <div id="product-offer" style="display: none;">
+                <span id="close"><img src="./img/img-content/baseline_close.png" alt="close"></span>
+                <p>Produto Oferta</p>
             </div>
         </div>
 
-            <section class="main-content">
-                <div class="content-nav">
-                    <h1>Navegue pela Loja</h1>
+        <section class="main-content">
+            <div class="content-nav">
+                <h1>Navegue pela Loja</h1>
 
-                    <div class="container-flex-popup">
-                    
-                        <div class="container-flex-popexclusive">
-                            <img id="exclu" src="./img/img-content/img-content-exclusive.png" alt="exclusive">
-                            <p>Exclusivos</p>
-                        </div>
-                        
-                        <div class="container-flex-popnew">
-                            <img id="novi" src="./img/img-content/img-content-news.png" alt="news">
-                            <p>Novidades</p>
-                        </div>
+                <div class="container-flex-popup">
 
-                        <div class="container-flex-popdrin">
-                            <img id="drin" src="./img/img-content/img-content-drink.png" alt="drinks">
-                            <p>Drinks</p>
-                        </div>
-                        
+                    <div class="container-flex-popexclusive">
+                        <img id="exclu" src="./img/img-content/img-content-exclusive.png" alt="exclusive">
+                        <p>Exclusivos</p>
+                    </div>
+
+                    <div class="container-flex-popnew">
+                        <img id="novi" src="./img/img-content/img-content-news.png" alt="news">
+                        <p>Novidades</p>
+                    </div>
+
+                    <div class="container-flex-popdrin">
+                        <img id="drin" src="./img/img-content/img-content-drink.png" alt="drinks">
+                        <p>Drinks</p>
                     </div>
 
                 </div>
 
-                <div class="content-hot">
-                    <h1>Mais comprados</h1>
-                    <div class="container-flex-pophot">
+            </div>
 
-                        <div class="container-flex-pophot_one">
-                            <img src="./img/img-content/img-content-hot-one.png" alt="">
-                            <p>Bhrama Duplo Malte</p>
-                        </div>
+            <div class="content-hot">
+                <h1>Mais comprados</h1>
+                <div class="container-flex-pophot">
 
+                    <div class="container-flex-pophot_one">
+                        <img id="hotone" src="./img/img-content/img-content-hot-one.png" alt="">
+                        <p>Bhrama Duplo Malte</p>
+                    </div>
+
+                    <div class="container-flex-pophot_two">
+                        <img id="hottwo" src="./img/img-content/img-content-hot-two.png" alt="">
+                        <p>Whiskey Jack Daniel's</p>
+                    </div>
+
+                    <div class="container-flex-pophot_thr">
+                        <img id="hotthr" src="./img/img-content/img-content-hot-thr.png" alt="">
+                        <p>Monster Energy - Mango Loco</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="content-offer">
+                <h1>Oferta do Dia</h1>
+                <div class="container-flex-popoffer">
+
+                    <div class="container-flex-popoffer-one">
+                        <img id="offer" src="./img/img-content/img-content-offer.png" alt="">
+                        <p id="offer-content">Skol Beats - ZODIAC</p>
+                        <p id="offer-price">R$ 2,99</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="content-offer">
-                    <h1>Oferta do Dia</h1>
-                    <div class="container-flex-popoffer">
+        </section>
 
-                        <div class="container-flex-popoffer-one">
-                            <img id="offer" src="" alt="">
-                            <p id="offer-content"></p>
-                        </div>
-                    </div>
-                </div>
 
-            </section>
 
-            
-            
     </main>
 
     <footer class="main-footer" role="contentinfo">
@@ -165,22 +186,26 @@
         <ul class="nav-container" role="navigation">
             <li id="footer-icon">
                 <a href="https://www.facebook.com/javabaradega" target="_blank">
-                    <span class="material-icons">facebook</span> <p> Facebook</p>
+                    <span class="material-icons">facebook</span>
+                    <p> Facebook</p>
                 </a>
             </li>
 
             <li id="footer-icon">
                 <a href="mailto:javabaradega@outlook.com">
-                    <span class="material-icons">email</span> <p> E-mail</p>
+                    <span class="material-icons">email</span>
+                    <p> E-mail</p>
                 </a>
             </li>
 
             <li id="footer-icon">
                 <a href="#">
-                    <span class="material-icons">business</span> <p> Quem somos</p>
+                    <span class="material-icons">business</span>
+                    <p> Quem somos</p>
                 </a>
             </li>
         </ul>
     </footer>
 </body>
+
 </html>
